@@ -88,6 +88,25 @@ img { max-width: 100%; display: block; }
   max-width: 36ch;
 }
 .hero-note strong { color: var(--ink); }
+.hero-grid { align-items: center; }
+.hero-visual { position: relative; }
+.hero-visual img {
+  width: 100%; height: 440px; object-fit: cover; display: block;
+  filter: saturate(.85) contrast(1.05);
+}
+.hero-visual::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(200deg, transparent 55%, rgb(20 23 28 / .55));
+  pointer-events: none;
+}
+.hero-chip {
+  position: absolute; left: 20px; bottom: 20px; z-index: 2;
+  background: var(--bg-raise); border-left: 3px solid var(--accent);
+  padding: 16px 20px; max-width: 300px;
+  box-shadow: 0 16px 40px rgb(20 23 28 / .22);
+}
+.hero-chip b { display: block; font-size: 30px; font-weight: 800; letter-spacing: -0.02em; }
+.hero-chip span { font-size: 13.5px; color: var(--ink-soft); line-height: 1.4; display: block; margin-top: 2px; }
 
 /* ---------- stats strip ---------- */
 .stats { border-bottom: 1px solid var(--line); background: var(--bg-raise); }
@@ -273,6 +292,7 @@ section.block { padding: 88px 0; }
 @media (max-width: 860px) {
   .nav { display: none; }
   .hero-grid, .case-teaser, .case-article, .team-note { grid-template-columns: 1fr; }
+  .hero-visual img { height: 300px; }
   .case-article aside { position: static; }
   .stats .wrap, .case-results .wrap { grid-template-columns: 1fr; }
   .stat + .stat { border-left: 0; border-top: 1px solid var(--line); }
