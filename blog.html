@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Статьи — Кратно</title>
+<meta name="description" content="Статьи основателя бюро Кратно о маркетинге и коммерческом управлении: практика, цифры, разборы решений.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html">КРАТ<em>НО</em></a>
+    <nav class="nav">
+      <a href="index.html">Продукты</a>
+      <a href="cases.html">Кейсы</a>
+      <a href="blog.html" class="active">Статьи</a>
+      <a href="about.html">О бюро</a>
+    </nav>
+    <a class="head-cta" href="index.html#contact">Обсудить задачу</a>
+  </div>
+</header>
+
+<section class="about-hero">
+  <div class="wrap">
+    <h1>Статьи основателя</h1>
+    <p class="lead">Разборы из практики: как устроены продажи и маркетинг в среднем бизнесе, где теряется маржа и что с этим делать. Каждая статья — отдельная страница.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="post-list">
+      <a class="post-card reveal" href="post-funnel.html">
+        <time datetime="2026-06-18">18 июня 2026</time>
+        <h3>Почему воронка из трёх продуктов продаёт лучше прайса из двадцати услуг</h3>
+        <p>Клиент не выбирает из двадцати позиций — он уходит думать. Разбираю на цифрах, как сжатие линейки поднимает и конверсию, и средний чек.</p>
+        <span class="more">Читать статью</span>
+      </a>
+      <a class="post-card reveal" href="post-margin.html">
+        <time datetime="2026-05-30">30 мая 2026</time>
+        <h3>Считаем маржу по категориям: упражнение на один вечер, которое меняет ценовую политику</h3>
+        <p>Пошаговый разбор: как разложить выручку по категориям с учётом доставки и хранения и найти позиции, которые продаются в минус.</p>
+        <span class="more">Читать статью</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="wrap">
+    <h2>Хотите такой же разбор по своей компании?</h2>
+    <a class="btn" href="mailto:hello@kratno.example">Обсудить задачу</a>
+  </div>
+</div>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div><b>КРАТНО</b> · бюро маркетинга и коммерческого управления</div>
+    <div>Демонстрационный концепт для портфолио</div>
+  </div>
+</footer>
+
+<script>
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}), { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

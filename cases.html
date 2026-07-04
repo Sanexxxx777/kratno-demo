@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Кейсы — Кратно</title>
+<meta name="description" content="Кейсы бюро Кратно: рост выручки, перестройка продаж и маркетинга. Каждый кейс — отдельная страница с задачей, действиями и цифрами.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html">КРАТ<em>НО</em></a>
+    <nav class="nav">
+      <a href="index.html">Продукты</a>
+      <a href="cases.html" class="active">Кейсы</a>
+      <a href="blog.html">Статьи</a>
+      <a href="about.html">О бюро</a>
+    </nav>
+    <a class="head-cta" href="index.html#contact">Обсудить задачу</a>
+  </div>
+</header>
+
+<section class="about-hero">
+  <div class="wrap">
+    <h1>Кейсы: задача, действия, цифры</h1>
+    <p class="lead">Каждый проект — отдельная страница. Без «успешного успеха»: что было, что сделали, что изменилось в деньгах.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="case-grid">
+      <a class="case-card reveal" href="case.html">
+        <div class="case-card__media" style="background-image:url('https://picsum.photos/id/7/800/520')"></div>
+        <div class="case-card__body">
+          <span class="case-card__tag">Производство · B2B</span>
+          <h3>Мебель для HoReCa: из «сарафана» в систему продаж</h3>
+          <div class="case-card__nums"><b>+64%</b><span>выручка за 10 месяцев</span></div>
+        </div>
+      </a>
+      <a class="case-card reveal" href="case-sklad.html">
+        <div class="case-card__media" style="background-image:url('https://picsum.photos/id/1048/800/520')"></div>
+        <div class="case-card__body">
+          <span class="case-card__tag">Дистрибуция · опт</span>
+          <h3>Дистрибутор стройматериалов: маржа вместо оборота</h3>
+          <div class="case-card__nums"><b>+11 п.п.</b><span>валовая маржа за полгода</span></div>
+        </div>
+      </a>
+      <a class="case-card reveal" href="case-school.html">
+        <div class="case-card__media" style="background-image:url('https://picsum.photos/id/180/800/520')"></div>
+        <div class="case-card__body">
+          <span class="case-card__tag">Онлайн-образование</span>
+          <h3>Школа для специалистов: перезапуск продуктовой линейки</h3>
+          <div class="case-card__nums"><b>×1,8</b><span>выручка на подписчика базы</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="wrap">
+    <h2>Похожая ситуация? Начнём с диагностики</h2>
+    <a class="btn" href="mailto:hello@kratno.example">Обсудить задачу</a>
+  </div>
+</div>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div><b>КРАТНО</b> · бюро маркетинга и коммерческого управления</div>
+    <div>Демонстрационный концепт для портфолио</div>
+  </div>
+</footer>
+
+<script>
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}), { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
