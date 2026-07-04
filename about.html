@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>О бюро — Кратно</title>
+<meta name="description" content="Кратно — бюро маркетинга и коммерческого управления. Принципы работы и формат сотрудничества.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html">КРАТ<em>НО</em></a>
+    <nav class="nav">
+      <a href="index.html">Продукты</a>
+      <a href="case.html">Кейсы</a>
+      <a href="about.html" class="active">О бюро</a>
+    </nav>
+    <a class="head-cta" href="index.html#contact">Обсудить задачу</a>
+  </div>
+</header>
+
+<section class="about-hero">
+  <div class="wrap">
+    <h1>Небольшое бюро для больших коммерческих решений</h1>
+    <p class="lead">Мы выросли из практики: до бюро партнёры руководили маркетингом и продажами в производственных и дистрибуторских компаниях. Поэтому меряем работу не отчётами, а выручкой клиента.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2>Принципы, по которым легко проверить, наши ли мы люди</h2>
+    <div class="principles">
+      <div class="principle reveal">
+        <div class="no">01</div>
+        <div>
+          <h3>Цифры раньше мнений</h3>
+          <p>Любое предложение в стратегии опирается на данные клиента: воронку, маржу, цикл сделки. Если данных нет, первым шагом ставим их сбор, а не «креативную концепцию».</p>
+        </div>
+      </div>
+      <div class="principle reveal">
+        <div class="no">02</div>
+        <div>
+          <h3>Говорим «нет» до договора</h3>
+          <p>Если видим, что задача не решается нашими продуктами или бюджет не даст результата, отказываемся на этапе переговоров. Репутация дороже одного контракта.</p>
+        </div>
+      </div>
+      <div class="principle reveal">
+        <div class="no">03</div>
+        <div>
+          <h3>Внедрение входит в ответственность</h3>
+          <p>Стратегия без внедрения — это документ. Поэтому предлагаем сопровождение и остаёмся в проекте, пока план не станет операционной рутиной команды клиента.</p>
+        </div>
+      </div>
+      <div class="principle reveal">
+        <div class="no">04</div>
+        <div>
+          <h3>Один партнёр на проект</h3>
+          <p>Клиент общается с тем, кто принимает решения по проекту, а не с менеджером-передатчиком. Партнёр ведёт не больше четырёх проектов одновременно.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-note reveal">
+      <div>
+        <h3>Команда под задачу, а не штат под загрузку</h3>
+        <p>Ядро бюро — три партнёра. Под проекты подключаем проверенных специалистов: аналитиков, трафик-менеджеров, методологов продаж. Клиент платит за результат, а не за содержание офиса.</p>
+      </div>
+      <div>
+        <p><b>Работаем по всей России</b> — встречи онлайн, выезд на производство по договорённости на этапе диагностики.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="wrap">
+    <h2>Проверить нас проще всего на диагностике</h2>
+    <a class="btn" href="mailto:hello@kratno.example">Обсудить задачу</a>
+  </div>
+</div>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div><b>КРАТНО</b> · бюро маркетинга и коммерческого управления</div>
+    <div>Демонстрационный концепт для портфолио</div>
+  </div>
+</footer>
+
+<script>
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}), { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
