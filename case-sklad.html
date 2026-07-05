@@ -25,7 +25,7 @@
       <a href="blog.html">Статьи</a>
       <a href="about.html">О бюро</a>
     </nav>
-    <a class="head-cta" href="index.html#contact">Обсудить задачу</a>
+    <a class="head-cta" href="#" data-modal-open>Обсудить задачу</a>
   </div>
 </header>
 
@@ -90,19 +90,78 @@
   </article>
 </div>
 
+<div class="next-case">
+  <div class="wrap">
+    <a href="case-school.html">
+      <div><small>Следующий кейс</small><h3>Школа для специалистов: перезапуск продуктовой линейки</h3></div>
+      <span class="arr">&rarr;</span>
+    </a>
+  </div>
+</div>
+
 <div class="cta-band">
   <div class="wrap">
     <h2>Похожая ситуация? Начнём с диагностики</h2>
-    <a class="btn" href="mailto:hello@kratno.example">Обсудить задачу</a>
+    <a class="btn" href="#" data-modal-open>Обсудить задачу</a>
   </div>
 </div>
 
 <footer class="site-foot">
-  <div class="wrap">
-    <div><b>КРАТНО</b> · бюро маркетинга и коммерческого управления</div>
-    <div>© 2026 · Работаем по всей России</div>
+  <div class="wrap cols">
+    <div class="about-col">
+      <a class="logo" href="index.html">КРАТ<em>НО</em></a>
+      <p>Бюро маркетинга и коммерческого управления. Диагностика, стратегия и внедрение для компаний с выручкой от 100 млн ₽.</p>
+    </div>
+    <div>
+      <h4>Разделы</h4>
+      <a href="index.html#products">Продукты</a>
+      <a href="cases.html">Кейсы</a>
+      <a href="blog.html">Статьи</a>
+      <a href="about.html">О бюро</a>
+    </div>
+    <div>
+      <h4>Контакты</h4>
+      <a href="#" data-modal-open>hello@kratno.example</a>
+      <a href="#" data-modal-open>Оставить заявку</a>
+      <a>Работаем по всей России, онлайн</a>
+    </div>
+  </div>
+  <div class="base">
+    <div>© 2026 КРАТНО</div>
+    <div>Сайт не использует cookies для рекламы</div>
   </div>
 </footer>
+
+<div class="modal" id="lead-modal" role="dialog" aria-modal="true" aria-labelledby="lm-title">
+  <div class="modal__back" data-modal-close></div>
+  <div class="modal__box">
+    <button class="modal__close" data-modal-close aria-label="Закрыть">&times;</button>
+    <h3 id="lm-title">Обсудить задачу</h3>
+    <p class="sub">Коротко расскажите о компании — вернёмся в течение рабочего дня с планом первой встречи.</p>
+    <form data-lead-form>
+      <label>Ваше имя</label>
+      <input type="text" name="name" required placeholder="Как к вам обращаться">
+      <label>Телефон или Telegram</label>
+      <input type="text" name="phone" required placeholder="+7 ___ ___-__-__ или @ник">
+      <label>Что интересует</label>
+      <select name="topic">
+        <option>Диагностика коммерческой функции</option>
+        <option>Стратегия роста</option>
+        <option>Сопровождение внедрения</option>
+        <option>Пока не знаю — нужен разбор</option>
+      </select>
+      <label>Пара слов о задаче</label>
+      <textarea name="msg" placeholder="Чем занимаетесь и что хочется изменить"></textarea>
+      <button class="send" type="submit">Отправить заявку</button>
+      <p class="fine">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных</p>
+    </form>
+    <div class="modal__ok">
+      <div class="ring">&#10003;</div>
+      <h3>Заявка принята</h3>
+      <p class="sub">Свяжемся с вами в течение рабочего дня.</p>
+    </div>
+  </div>
+</div>
 
 <script src="app.js"></script>
 </body>
