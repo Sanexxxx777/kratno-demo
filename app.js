@@ -56,7 +56,7 @@
         }
       });
     }, { threshold: 0.6 });
-    document.querySelectorAll('.stat b, .hero-chip b, .case-card__nums b, .nums b').forEach(function (el) { cio.observe(el); });
+    document.querySelectorAll('.stat b, .hero-chip b, .case-card__nums b, .case-nums b, .nums b').forEach(function (el) { cio.observe(el); });
   }
 
   // header shadow
