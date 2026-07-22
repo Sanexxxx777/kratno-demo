@@ -1,28 +1,38 @@
-# Кратно — демо-лендинг консалтингового бюро
+# Kratno — demo landing for a fictional consulting bureau
 
-Демо-проект для портфолио: многостраничный сайт вымышленного консалтингового бюро «КРАТНО» (маркетинг и коммерческое управление). Компания, кейсы, клиенты и отзывы — вымышленные, созданы для демонстрации вёрстки и фронтенд-навыков.
+**This is a portfolio demo — "Kratno" is a fictional client**, built to showcase frontend and layout skills. The company, case studies, clients and testimonials are all invented.
 
-**Живая версия:** https://shulgin.is-a.dev/kratno/
+**Live:** https://shulgin.is-a.dev/kratno-landing-demo/
 
-## Что показывает
+## What it shows
 
-- Многостраничная вёрстка: главная, о бюро, кейсы, блог, отдельные страницы кейсов
-- Vanilla JS без фреймворков: stagger-анимации на IntersectionObserver, анимированные счётчики цифр, модальное окно с формой заявки, параллакс в hero
-- Адаптивная вёрстка, поддержка `prefers-reduced-motion`
-- Статический сайт, задеплоен на GitHub Pages (`.nojekyll`)
+- Multi-page layout: home, about, cases, blog, individual case pages
+- Vanilla JS, no frameworks: IntersectionObserver stagger animations, animated number counters, a request-form modal, hero parallax
+- Responsive layout, `prefers-reduced-motion` support
+- Static site, deployed on GitHub Pages (`.nojekyll`)
 
-## Стек
+## Stack
 
-Чистый HTML / CSS / JS, без сборки и зависимостей.
+Plain HTML / CSS / JS, no build step, no dependencies.
 
-## Запуск локально
+## Run locally
 
-Открыть `index.html` в браузере или поднять любой статик-сервер в корне репозитория:
+Open `index.html` in a browser, or serve the repo root with any static server:
 
 ```
 python3 -m http.server
 ```
 
-## Автор
+## License
 
-Aleksandr Shulgin ([Sanexxxx777](https://github.com/Sanexxxx777))
+MIT — see [LICENSE](LICENSE).
+
+## Contact
+
+Aleksandr Shulgin — [github.com/Sanexxxx777](https://github.com/Sanexxxx777)
+
+---
+
+## RU (кратко)
+
+Демо-лендинг для портфолио: многостраничный сайт **вымышленного** консалтингового бюро «КРАТНО» (маркетинг и коммерческое управление). Компания, кейсы, клиенты и отзывы — вымышленные. Живая версия: https://shulgin.is-a.dev/kratno-landing-demo/
